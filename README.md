@@ -9,23 +9,23 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 
 ## Status table
 
-**👉 CURRENT STEP: 0.2 — Init local git repo (not started, awaiting go-ahead)**
+**👉 CURRENT STEP: 4.1 — Add `.github/workflows/deploy.yml` (GitHub Actions → Pages) (not started, awaiting go-ahead)**
 
 | # | Task | Done | Notes |
 |---|---|:---:|---|
 | 0.1 | Scaffold Next.js app (`create-next-app`, TypeScript + Tailwind + App Router) | ☑ | Hit two machine issues along the way: root-owned `~/.npm` cache (fixed via `sudo chown`), directory conflict from a partial first attempt (resolved by finishing `npm install` in place). Verified with `npm run dev` — HTTP 200. |
-| 0.2 | Init local git repo | ☐ | **← next up** |
-| 0.3 | Create GitHub repo `psaiquest/portfolio-website` | ☐ | `gh` CLI installed + authenticated, ready to use |
-| 0.4 | Push initial commit, connect local repo to GitHub remote | ☐ | Blocked on 0.3 |
+| 0.2 | Init local git repo | ☑ | Set global git identity (Prashant Seshadri / GitHub noreply email), `git init`, first commit `8e2ae80` (17 files, scaffold + tracker README) |
+| 0.3 | Create GitHub repo `psaiquest/portfolio-website` | ☑ | Created **private**, via `gh repo create --source=. --remote=origin` |
+| 0.4 | Push initial commit, connect local repo to GitHub remote | ☑ | `git push -u origin main` — verified live on GitHub, branch `main` tracked |
 | 1.1 | Confirm content source: bio, skills, projects, contact | ☑ | Using locked resume content per `Resume/CLAUDE.md` |
-| 1.2 | Add profile photo `public/me.png` | ☐ | **Need photo from Prashant** |
-| 1.3 | Build static terminal page — hero, bio, skills, projects, contact (no animation yet) | ☐ | |
-| 1.4 | Review static page on localhost, get sign-off | ☐ | |
-| 2.1 | Add typing effect + collapsible "tool use" blocks + section reveal | ☐ | |
-| 2.2 | Verify animation plays once/session, respects reduced-motion | ☐ | |
-| 3.1 | Write `data/qa.json` (~15-20 Q&A pairs about Prashant) | ☐ | |
-| 3.2 | Build terminal chat box (regex match, no backend/LLM) | ☐ | |
-| 4.1 | Add `.github/workflows/deploy.yml` (GitHub Actions → Pages) | ☐ | |
+| 1.2 | Add profile photo `public/me.png` | ☐ | Deferred — using "PS" initials placeholder avatar for now, swap in real photo later |
+| 1.3 | Build static terminal page — hero, bio, skills, projects, contact (no animation yet) | ☑ | `app/page.tsx` + `app/globals.css` + `app/layout.tsx` rewritten. Type-checked clean, verified rendering via `npm run dev` (HTTP 200, expected text present) |
+| 1.4 | Review static page on localhost, get sign-off | ☑ | Prashant reviewed at localhost:3000, approved |
+| 2.1 | Add typing effect + collapsible "tool use" blocks + section reveal | ☑ | `page.tsx` rewritten as client component with state machine (adapted from Jenny's mechanics), reduced-motion + sessionStorage-once handling, "new session" replay button. Type-checked clean. |
+| 2.2 | Verify animation plays once/session, respects reduced-motion | ☑ | Prashant confirmed in-browser |
+| 3.1 | Write `data/qa.json` (~15-20 Q&A pairs about Prashant) | ☑ | 18 entries, first-person voice, consolidated from Prashant's feedback + ChatGPT draft, corrected a factual error (MBA is UC not Cincinnati), no employer name anywhere. Validated as clean JSON. |
+| 3.2 | Build terminal chat box (regex match, no backend/LLM) | ☑ | Prashant tested in-browser: matched question streamed correct answer, unmatched question correctly triggered fallback |
+| 4.1 | Add `.github/workflows/deploy.yml` (GitHub Actions → Pages) | ☐ | **← next up** |
 | 4.2 | Set `basePath`/`unoptimized` in `next.config.ts` | ☐ | |
 | 4.3 | Enable Settings → Pages → Source → GitHub Actions | ☐ | |
 | 4.4 | Push to `main`, verify live deploy | ☐ | |
