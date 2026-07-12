@@ -9,7 +9,9 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 
 ## Status table
 
-**👉 CURRENT STEP: 4.1 — Add `.github/workflows/deploy.yml` (GitHub Actions → Pages) (not started, awaiting go-ahead)**
+**👉 CURRENT STEP: 5.1 — Add live URL to resume, GitHub profile README, LinkedIn (not started, awaiting go-ahead)**
+
+**🎉 LIVE: https://psaiquest.github.io/portfolio-website/**
 
 | # | Task | Done | Notes |
 |---|---|:---:|---|
@@ -25,11 +27,11 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 | 2.2 | Verify animation plays once/session, respects reduced-motion | ☑ | Prashant confirmed in-browser |
 | 3.1 | Write `data/qa.json` (~15-20 Q&A pairs about Prashant) | ☑ | 18 entries, first-person voice, consolidated from Prashant's feedback + ChatGPT draft, corrected a factual error (MBA is UC not Cincinnati), no employer name anywhere. Validated as clean JSON. |
 | 3.2 | Build terminal chat box (regex match, no backend/LLM) | ☑ | Prashant tested in-browser: matched question streamed correct answer, unmatched question correctly triggered fallback |
-| 4.1 | Add `.github/workflows/deploy.yml` (GitHub Actions → Pages) | ☐ | **← next up** |
-| 4.2 | Set `basePath`/`unoptimized` in `next.config.ts` | ☐ | |
-| 4.3 | Enable Settings → Pages → Source → GitHub Actions | ☐ | |
-| 4.4 | Push to `main`, verify live deploy | ☐ | |
-| 5.1 | Add live URL to resume, GitHub profile README, LinkedIn | ☐ | |
+| 4.1 | Add `.github/workflows/deploy.yml` (GitHub Actions → Pages) | ☑ | Mirrors Jenny's workflow. Repo made **public** (Prashant's call — plain professional info only, no SSN/address/phone anywhere) |
+| 4.2 | Set `basePath`/`unoptimized` in `next.config.ts` | ☑ | `output: "export"`, `basePath: "/portfolio-website"`, verified via local build — `out/index.html` contains expected content |
+| 4.3 | Enable Settings → Pages → Source → GitHub Actions | ☑ | Enabled via `gh api POST .../pages -f build_type=workflow` |
+| 4.4 | Push to `main`, verify live deploy | ☑ | Pushed `8e72659`, Actions run succeeded in 47s, verified HTTP 200 + correct content live |
+| 5.1 | Add live URL to resume, GitHub profile README, LinkedIn | ☐ | **← next up** |
 
 ---
 
