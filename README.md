@@ -69,6 +69,8 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 ## Session log
 **2026-07-10** — Reviewed Jenny's actual source code (`page.tsx`, `layout.tsx`, `globals.css`, `deploy.yml`) to understand real mechanics (see chat for plain-language explanation). Installed `gh` CLI (verified checksum against official release), authenticated as `psaiquest`. Corrected initial repo review after discovering 4 private repos missed by the unauthenticated scrape. Deleted 4 stale/duplicate repos (amazontest, amazonb2c, rag_simulator, tripflow) with explicit per-repo confirmation. Scaffolded the Next.js app (TypeScript + Tailwind + App Router) — fixed a root-owned npm cache issue along the way. App not yet customized with Prashant's content.
 
+**2026-07-11/12** — Built the full site: static content (Phase 1), typing/reveal animation (Phase 2), terminal chat box with `data/qa.json` (Phase 3) — all reviewed and tested by Prashant in-browser. Discussed public-vs-private tradeoffs for GitHub Pages (identity-theft concern addressed — only name/professional bio/career email exposed, no SSN/address/phone anywhere); Prashant chose to make the repo public. Added GitHub Actions deploy workflow, enabled Pages via `gh api`, pushed, and verified the **live site** at https://psaiquest.github.io/portfolio-website/. Fixed a word-tokenizer bug that dropped spaces after accent spans in the bio text ("solutionsfor", "100clients") and capitalized "Financial Services" — verified fix live via curl. Only 5.1 (link the URL from resume/GitHub profile/LinkedIn) remains.
+
 ---
 
 ## Local dev (standard Next.js — for reference)
