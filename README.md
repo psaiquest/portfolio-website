@@ -9,9 +9,7 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 
 ## Status table
 
-**👉 CURRENT STEP: 5.1 — Add live URL to resume, GitHub profile README, LinkedIn (not started, awaiting go-ahead)**
-
-**🎉 LIVE: https://psaiquest.github.io/portfolio-website/**
+**🎉 ALL STEPS COMPLETE. LIVE: https://psaiquest.github.io/portfolio-website/**
 
 | # | Task | Done | Notes |
 |---|---|:---:|---|
@@ -31,7 +29,7 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 | 4.2 | Set `basePath`/`unoptimized` in `next.config.ts` | ☑ | `output: "export"`, `basePath: "/portfolio-website"`, verified via local build — `out/index.html` contains expected content |
 | 4.3 | Enable Settings → Pages → Source → GitHub Actions | ☑ | Enabled via `gh api POST .../pages -f build_type=workflow` |
 | 4.4 | Push to `main`, verify live deploy | ☑ | Pushed `8e72659`, Actions run succeeded in 47s, verified HTTP 200 + correct content live |
-| 5.1 | Add live URL to resume, GitHub profile README, LinkedIn | ☐ | **← next up** |
+| 5.1 | Add live URL to resume, GitHub profile README, LinkedIn | ☑ | GitHub profile README updated (`GitHub Repo/README.md`); resume `build.js` + regenerated `.docx` + `.html` all updated — added clickable Portfolio + LinkedIn links, removed 2 broken/non-functional project GitHub links (tripflow-v2 private, Smart Portfolio missing href) along the way. LinkedIn itself needs Prashant to add the link manually (no API access) — Featured or About section. |
 
 ---
 
