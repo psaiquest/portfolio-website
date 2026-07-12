@@ -56,14 +56,14 @@ type BioToken = { word: string; accent?: boolean };
 
 const RAW_BIO: Array<{ text: string; accent?: boolean }> = [
   { text: "Prashant is a product leader with 19 years of experience delivering enterprise-scale digital transformation and " },
-  { text: "AI-powered solutions", accent: true },
-  { text: " for " },
-  { text: "Fortune 100", accent: true },
-  { text: " clients across financial services, CRM, and SaaS. He has a proven track record managing " },
+  { text: "AI-powered solutions ", accent: true },
+  { text: "for " },
+  { text: "Fortune 100 ", accent: true },
+  { text: "clients across Financial Services, CRM, and SaaS. He has a proven track record managing " },
   { text: "multi-million-dollar programs", accent: true },
   { text: ", cross-functional teams, and complex product roadmaps from discovery to delivery. Currently building " },
-  { text: "AI-powered full-stack applications", accent: true },
-  { text: " and " },
+  { text: "AI-powered full-stack applications ", accent: true },
+  { text: "and " },
   { text: "LLM-driven tools", accent: true },
   { text: "; PMP, CSPO, Scrum Master, and SAFe certified." },
 ];
@@ -224,7 +224,7 @@ function HeroBody({ revealed }: { revealed: number }) {
             <>
               <p className="text-lg leading-relaxed">
                 Enterprise-scale <span className="text-accent">digital transformation</span> for{" "}
-                <span className="text-accent">Fortune 100</span> clients across financial services, CRM,
+                <span className="text-accent">Fortune 100</span> clients across Financial Services, CRM,
                 and SaaS
               </p>
               <p className="text-dim">// Dallas, USA</p>
