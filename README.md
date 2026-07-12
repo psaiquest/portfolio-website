@@ -4,6 +4,9 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 
 **Target repo:** `github.com/psaiquest/portfolio-website` (separate from the resume repo)
 **Target live URL:** `https://psaiquest.github.io/portfolio-website`
+**Google Drive mirror:** `My Drive > Claude > Portfolio - Related Claude` (folder ID `1FW_rqIps2KsZdfgboaniM3Bm6ps9eUTn`) — local sync path: `/Users/prash29/Library/CloudStorage/GoogleDrive-psaiquest@gmail.com/My Drive/Claude/Portfolio - Related Claude`
+
+**⚠️ Standing rule (2026-07-12):** Whenever a code change is made to this project, mirror the same changed file(s) into the Drive folder above (plain `cp`, since it's locally synced — no Drive API/base64 needed) in addition to committing/pushing to GitHub. Keep both in sync every time, not just at milestones.
 
 ---
 
