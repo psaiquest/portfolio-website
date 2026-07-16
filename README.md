@@ -33,6 +33,7 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 | 4.3 | Enable Settings → Pages → Source → GitHub Actions | ☑ | Enabled via `gh api POST .../pages -f build_type=workflow` |
 | 4.4 | Push to `main`, verify live deploy | ☑ | Pushed `8e72659`, Actions run succeeded in 47s, verified HTTP 200 + correct content live |
 | 5.1 | Add live URL to resume, GitHub profile README, LinkedIn | ☑ | GitHub profile README updated (`GitHub Repo/README.md`); resume `build.js` + regenerated `.docx` + `.html` all updated — added clickable Portfolio + LinkedIn links, removed 2 broken/non-functional project GitHub links (tripflow-v2 private, Smart Portfolio missing href) along the way. LinkedIn itself needs Prashant to add the link manually (no API access) — Featured or About section. |
+| 6.1 | Add AI Chat Dashboard project (2026-07-15) | ☑ | New first entry in `projects` array (live link to https://ai-chat-dashboard-theta.vercel.app, label "live · demo on request" — repo stays private, PIN not published, per Prashant's call); `data/qa.json` updated (general projects answer + dedicated entry, now 19 entries). Verified via `tsc` + static build before push. |
 
 ---
 
@@ -73,6 +74,8 @@ Modeled after Jenny Park's terminal-style portfolio (`portfolio-website-main-jen
 **2026-07-11/12** — Built the full site: static content (Phase 1), typing/reveal animation (Phase 2), terminal chat box with `data/qa.json` (Phase 3) — all reviewed and tested by Prashant in-browser. Discussed public-vs-private tradeoffs for GitHub Pages (identity-theft concern addressed — only name/professional bio/career email exposed, no SSN/address/phone anywhere); Prashant chose to make the repo public. Added GitHub Actions deploy workflow, enabled Pages via `gh api`, pushed, and verified the **live site** at https://psaiquest.github.io/portfolio-website/. Fixed a word-tokenizer bug that dropped spaces after accent spans in the bio text ("solutionsfor", "100clients") and capitalized "Financial Services" — verified fix live via curl. Only 5.1 (link the URL from resume/GitHub profile/LinkedIn) remains.
 
 ---
+
+**2026-07-15** — Added the AI Chat Dashboard project (built separately at `Projects/OpenRouter Project - Unified Interface for LLMs`, live on Vercel) to the projects list and terminal-chat Q&A. Prashant's choices: link the live URL but keep the GitHub repo private; PIN-gated demo stays "available on request" rather than publishing the PIN. Typechecked + static-built before pushing; mirrored changed files to the Drive folder.
 
 ## Local dev (standard Next.js — for reference)
 

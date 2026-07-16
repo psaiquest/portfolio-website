@@ -86,6 +86,12 @@ const skills = [
 
 const projects = [
   {
+    name: "AI Chat Dashboard",
+    description: "Multi-LLM chat — compare answers, cost & latency per model",
+    href: "https://ai-chat-dashboard-theta.vercel.app",
+    label: "live · demo on request",
+  },
+  {
     name: "TripFlow",
     description: "Full-stack travel & wellness scheduling app",
     href: "https://zen-trip-studio.lovable.app",

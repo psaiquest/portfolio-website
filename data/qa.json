@@ -1,74 +1,116 @@
 [
   {
-    "patterns": ["hello|hi|hey|sup|greetings|howdy"],
+    "patterns": [
+      "hello|hi|hey|sup|greetings|howdy"
+    ],
     "answer": "Hey! I'm here to answer questions about Prashant's background, experience, skills, projects, certifications, and how to get in touch."
   },
   {
-    "patterns": ["who are you|tell me about yourself|introduce yourself|what's your story|who is prashant"],
+    "patterns": [
+      "who are you|tell me about yourself|introduce yourself|what's your story|who is prashant"
+    ],
     "answer": "I'm Prashant — a Senior Product Manager with 19 years of experience across financial services, enterprise CRM, and SaaS. PMP, CSPO, Certified Scrum Master, and SAFe certified, and I also build AI-powered applications using modern LLM technologies."
   },
   {
-    "patterns": ["looking for a job|open to work|job search|seeking|employment|hiring|full.time|new role|new job|is he available|available"],
+    "patterns": [
+      "looking for a job|open to work|job search|seeking|employment|hiring|full.time|new role|new job|is he available|available"
+    ],
     "answer": "Motivated to excel — open to the right opportunity."
   },
   {
-    "patterns": ["what do you do|your role|current role|day.to.day|^job$"],
+    "patterns": [
+      "what do you do|your role|current role|day.to.day|^job$"
+    ],
     "answer": "I lead enterprise CRM product strategy — defining roadmaps, partnering with cross-functional teams, and delivering AI-driven automation for large-scale platforms."
   },
   {
-    "patterns": ["projects|what are you building|portfolio|current projects"],
-    "answer": "Recent work: TripFlow, a calendar-aware travel and wellness planner; Smart Portfolio, an AI investment action engine; and a PRD Generator that turns a brief into a structured product requirements doc using Claude."
+    "patterns": [
+      "projects|what are you building|portfolio|current projects"
+    ],
+    "answer": "Recent work: AI Chat Dashboard, a multi-LLM comparison app with per-response cost and latency metrics; TripFlow, a calendar-aware travel and wellness planner; Smart Portfolio, an AI investment action engine; and a PRD Generator that turns a brief into a structured product requirements doc using Claude."
   },
   {
-    "patterns": ["tripflow"],
+    "patterns": [
+      "ai chat dashboard|chat dashboard|multi.?llm|openrouter|model comparison"
+    ],
+    "answer": "A PIN-gated Next.js + Supabase app that sends one prompt to multiple LLMs at once via OpenRouter — GPT-4o, Claude, Gemini, Llama, Mistral — and shows every answer side by side with per-response token, cost, and latency metrics. Live at the link in projects; demo PIN available on request."
+  },
+  {
+    "patterns": [
+      "tripflow"
+    ],
     "answer": "A calendar-aware travel planning app — finds ideal travel windows around work commitments and recommends destination-specific wellness activities. Live demo linked in projects."
   },
   {
-    "patterns": ["smart portfolio|portfolio action|investment"],
+    "patterns": [
+      "smart portfolio|portfolio action|investment"
+    ],
     "answer": "An AI-powered investment assistant — plain-language recommendations on concentration risk, sell timing, and covered calls. Built with FastAPI, React, and Claude — 54/54 automated tests passing."
   },
   {
-    "patterns": ["prd|product requirements|prd generator"],
+    "patterns": [
+      "prd|product requirements|prd generator"
+    ],
     "answer": "Turns a simple product brief into a structured PRD using Claude — cuts documentation time from hours to minutes."
   },
   {
-    "patterns": ["tech stack|technologies|tools you use|programming languages|stack"],
+    "patterns": [
+      "tech stack|technologies|tools you use|programming languages|stack"
+    ],
     "answer": "Salesforce CRM, Jira, Kafka, Lightning Web Components, Figma on the product side. Claude API, RAG, vector search, prompt engineering, and LLM orchestration on the AI side."
   },
   {
-    "patterns": ["\\bai\\b|machine learning|llm|claude|artificial intelligence|large language model"],
+    "patterns": [
+      "\\bai\\b|machine learning|llm|claude|artificial intelligence|large language model"
+    ],
     "answer": "I build AI-native applications with Claude and RAG pipelines — including a multi-agent MCP framework that lets AI agents update Salesforce records in real time. My focus is applied AI: practical LLM systems that automate real workflows."
   },
   {
-    "patterns": ["background|experience|career|history|how did you get here"],
+    "patterns": [
+      "background|experience|career|history|how did you get here"
+    ],
     "answer": "19 years spanning technical delivery, IT project management, and product leadership — evolving from engineering into enterprise CRM and now AI-enabled product strategy across financial services and SaaS."
   },
   {
-    "patterns": ["certifications|certified|pmp|cspo|scrum master|safe"],
+    "patterns": [
+      "certifications|certified|pmp|cspo|scrum master|safe"
+    ],
     "answer": "PMP certified, Certified Scrum Product Owner (CSPO), Certified Scrum Master (CSM), and SAFe certified."
   },
   {
-    "patterns": ["education|degree|university|mba"],
+    "patterns": [
+      "education|degree|university|mba"
+    ],
     "answer": "MBA from the University of California, MS in Information Systems from the University of Maine, MS in Chemical Engineering from West Virginia University, and a BE in Chemical Engineering from Manipal Institute of Technology."
   },
   {
-    "patterns": ["contact|email|reach|get in touch|message"],
+    "patterns": [
+      "contact|email|reach|get in touch|message"
+    ],
     "answer": "Best way to reach me: prashcareer19@gmail.com — or connect on LinkedIn."
   },
   {
-    "patterns": ["linkedin"],
+    "patterns": [
+      "linkedin"
+    ],
     "answer": "Connect with me on LinkedIn: linkedin.com/in/prash9"
   },
   {
-    "patterns": ["github|open source|repos|code"],
+    "patterns": [
+      "github|open source|repos|code"
+    ],
     "answer": "Explore my projects on GitHub: github.com/psaiquest"
   },
   {
-    "patterns": ["hire|work together|collaborate|freelance|consulting"],
+    "patterns": [
+      "hire|work together|collaborate|freelance|consulting"
+    ],
     "answer": "Always interested in conversations about product strategy, AI adoption, enterprise CRM, and digital transformation — reach out and let's talk."
   },
   {
-    "patterns": ["location|where are you|city|based|timezone|remote"],
+    "patterns": [
+      "location|where are you|city|based|timezone|remote"
+    ],
     "answer": "Dallas, USA."
   }
 ]
